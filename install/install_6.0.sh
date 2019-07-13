@@ -395,7 +395,7 @@ Install_webpy()
 Install_setuptools
 Install_pip
 
-curl -Ss --connect-timeout 3 -m 60 https://raw.githubusercontent.com/cq99/bt-6.9.6-pro/master/install/pip_select.sh|bash
+curl -Ss --connect-timeout 3 -m 60 http://download.bt.cn/install/pip_select.sh|bash
 
 isPsutil=`python -m psutil 2>&1|grep package`
 if [ "$isPsutil" != "" ];then
